@@ -1,0 +1,8 @@
+font-family: 'Lacquer', sans-serif;
+background-color: #e6ffff;
+    
+    .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
