@@ -18,22 +18,6 @@
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
 <title>Hi! Welcome ♡</title>
-    <script>  
-    function hvr(dom, action)
-{
-    if (action == 'in')
-    {
-        $(dom).find("[col=g]").css("display", "none");
-        $(dom).find("[col=b]").css("display", "inline-block");
-    }
-
-    else
-    {
-        $(dom).find("[col=b]").css("display", "none");
-        $(dom).find("[col=g]").css("display", "inline-block");
-    }
-}
-    </script>
   <style>
        @font-face {
 font-family: "bakso";
@@ -78,25 +62,7 @@ h1 {
   </style>
 </head>
 <body>
-     <script>  
-    function hvr(dom, action)
-{
-    if (action == 'in')
-    {
-        $(dom).find("[col=g]").css("display", "none");
-        $(dom).find("[col=b]").css("display", "inline-block");
-    }
-    else
-    {
-        $(dom).find("[col=b]").css("display", "none");
-        $(dom).find("[col=g]").css("display", "inline-block");
-    }
-}
-    </script>
-<span id="bellLogo" onmouseover="hvr(this, 'in')" onmouseleave="hvr(this, 'out')">
-  <img src="gifwelcome.gif" class=bell col="g">
-  <img src="gifwelcome.png" class=bell style="display:none" col="b">
-</span>
+<img src='gifwelcome.gif' onmouseover="this.src='gifwelcome.png';" onmouseout="this.src='gifwelcome.gif';" />
 <div class="footer">
   <p class="footer-stroke"><img src="Twitter_logo_2012.svg" widht="16px" height="16px">@vitoriayukari &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="email.svg" widht="18px" height="18px"> vitoriayukari@outlook.com</p>
 </div>  
