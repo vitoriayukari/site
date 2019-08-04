@@ -19,6 +19,21 @@
 <meta name="theme-color" content="#ffffff">
 <title>Hi! Welcome ♡</title>
   <style>
+    
+    function hvr(dom, action)
+{
+    if (action == 'in')
+    {
+        $(dom).find("[col=g]").css("display", "none");
+        $(dom).find("[col=b]").css("display", "inline-block");
+    }
+
+    else
+    {
+        $(dom).find("[col=b]").css("display", "none");
+        $(dom).find("[col=g]").css("display", "inline-block");
+    }
+}
        @font-face {
 font-family: "bakso";
 src: url("baksosapi-webfont.woff") format("woff"),
@@ -62,7 +77,10 @@ h1 {
   </style>
 </head>
 <body>
-<img src="gifwelcome.gif" class="center">
+<span id="bellLogo" onmouseover="hvr(this, 'in')" onmouseleave="hvr(this, 'out')">
+  <img src="gifwelcome.gif" class=bell col="g">
+  <img src="gifwelcome.png" class=bell style="display:none" col="b">
+</span>
 <HR class="thick">
 <h1 style="text-align:center">Hi! I'm Vitória, an aspirant indie game developer from Brazil, this is my personal website where i'll publish the things i make, thanks for visiting!</h1>
 <div class="footer">
